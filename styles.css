@@ -1,0 +1,58 @@
+:root {
+    --color1: #1E2D3B;
+    --color2: #EDCD1F;
+}
+/* https://youtu.be/vx5Qt7_ECEE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Velvetica, sans-serif;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: var(--color1);
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color2);
+    color: black;
+    padding: 0 1rem 0 1rem;
+}
+.Logo-up{
+    font-weight: 590;
+}
+.Logo-down{
+    font-weight: 400;
+}
+.Logo{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+    color: aliceblue;
+    display: flex;
+    gap: 4rem;
+}
+ul:nth-child(2){
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding-right: 2rem;
+}
