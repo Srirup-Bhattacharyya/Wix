@@ -120,19 +120,19 @@ ul:nth-child(2){
   top: 35%;
   left: 48%;
 }
-.services{
+#services{
   text-align: center;
+  position: relative;
   height: 100vh;
   width: 100%;
 }
-.services h2{
+#services h2{
   text-transform: uppercase;
   color: var(--color3);
   margin-top: var(--layoutmargin1);
   margin-bottom: var(--layoutmargin2);
   letter-spacing: 2px;
   font-size: 3rem;
-  position: relative;
 }
 .customunderline{
   width: 9%;
@@ -146,7 +146,7 @@ ul:nth-child(2){
   height: 75%;
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: var(--layoutmargin3);
 }
 .card{
@@ -158,7 +158,7 @@ ul:nth-child(2){
   width: 90%;
   padding-left: 8%;
 }
-.card-text h3{
+#services h3{
   width: min-content;
   text-align: left;
   font-family: 'font1';
@@ -175,4 +175,49 @@ ul:nth-child(2){
 .card img{
   object-fit: fill;
   width: 100%;
+}
+#about{
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.about-left{
+  height: 100%;
+  padding-left: 120px;
+  width: 50%;
+  background-color: var(--color4);
+}
+.about-right{
+  height: 100%;
+  width: 50%;
+  background-image: url(./Assets/Images/c19c76_427a7bbf62474f74968cb087499c7a3e.avif);
+  object-fit: fill;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.customunderline2{
+  width: 17%;
+  height: 0.5rem;
+  position: sticky;
+  left: 0%;
+  background-color: var(--color2);
+  margin-bottom: var(--layoutmargin1);
+}
+#about h2{
+  text-transform: uppercase;
+  color: var(--color3);
+  margin-top: var(--layoutmargin1);
+  margin-bottom: var(--layoutmargin2);
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+#about p{
+  color: var(--color3);
+  font-family: 'font3';
+  font-size: 1.1rem;
+  padding-right: 15%;
+  line-height: 2rem;
 }
