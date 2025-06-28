@@ -5,6 +5,7 @@
     --color4: #e5e4e479;
     --color5: #3D5975;
     --color6: #464646;
+    --color7: #EDCD1F;
     --layoutmargin1: 3rem;
     --layoutmargin2: 1rem;
     --layoutmargin3: 4.2rem;
@@ -220,4 +221,40 @@ ul:nth-child(2){
   font-size: 1.1rem;
   padding-right: 15%;
   line-height: 2rem;
+}
+.stats{
+  height: 226.406px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color7);
+}
+.statscontainer p{
+  width: min-content;
+  text-align: center;
+  justify-self: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color5);
+}
+.statscontainer h1{
+  text-align: center;
+  font-size: 60px;
+  color: var(--color5);
+  font-family: 'font4';
+  padding-bottom: 9%;
+}
+.stats .statscontainer{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'font4';
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.custom-line{
+  height: 35%;
+  background-color: white;
+  width: 0.3%
 }
