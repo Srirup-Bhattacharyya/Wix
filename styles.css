@@ -127,9 +127,10 @@ ul:nth-child(2){
   height: 100vh;
   width: 100%;
 }
-#services h2{
+#services h2, #projects h2{
   text-transform: uppercase;
   color: var(--color3);
+  font-family: 'font4';
   margin-top: var(--layoutmargin1);
   margin-bottom: var(--layoutmargin2);
   letter-spacing: 2px;
@@ -139,7 +140,8 @@ ul:nth-child(2){
   width: 9%;
   height: 0.5rem;
   position: sticky;
-  left: 45%;
+  justify-self: center;
+  left: 40%;
   background-color: var(--color2);
   margin-bottom: var(--layoutmargin1);
 }
@@ -257,4 +259,33 @@ ul:nth-child(2){
   height: 35%;
   background-color: white;
   width: 0.3%
+}
+#projects{
+  height: 200vh;
+  width: 100%;
+  text-align: center;
+}
+.content{
+  height: 71%;
+  width: 73%;
+  justify-self: center;
+  justify-content: space-evenly;
+}
+.content img{
+  height: 455px;
+  width: 455px;
+}
+.photo1-2{
+  height: 50%;
+  width: 95%;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+}
+.photo2-3{
+  height: 50%;
+  width: 95%;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
 }
