@@ -10,6 +10,12 @@
     --layoutmargin2: 1rem;
     --layoutmargin3: 4.2rem;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'font1';
+}
 @font-face {
   font-family: 'Font1';
   src: url(Assets/Fonts/avenir-lt-w01_35-light1475496.woff2);
@@ -26,12 +32,6 @@
   font-family: 'Font4';
   src: url(Assets/Fonts/WixMadeforTextVF_W_Wght.8022447a.woff2);
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Velvetica, sans-serif;
-}
 html, body{
     height: 100vh;
     width: 100vw;
@@ -46,6 +46,7 @@ nav{
     width: 100%;
     display: flex;
     position: fixed;
+    text-transform: uppercase;
     justify-content: space-between;
     background-color: var(--color1);
     z-index: 999;
@@ -59,10 +60,14 @@ nav{
     padding: 0 1rem 0 1rem;
 }
 .Logo-up{
-    font-weight: 590;
+  font-weight: 720;
+  font-family: 'font4';
+  letter-spacing: 1.5px;
 }
 .Logo-down{
-    font-weight: 400;
+  font-family: 'font1';
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 .Logo{
     display: flex;
@@ -77,6 +82,7 @@ ul{
 ul:nth-child(2){
     display: flex;
     gap: 4rem;
+    font-size: 0.9rem;
     align-items: center;
     padding-right: 2rem;
 }
@@ -124,10 +130,11 @@ ul:nth-child(2){
 #services{
   text-align: center;
   position: relative;
+  padding-bottom: 500px;
   height: 100vh;
   width: 100%;
 }
-#services h2, #projects h2{
+#services h2, #projects h2, #contact h2{
   text-transform: uppercase;
   color: var(--color3);
   font-family: 'font4';
@@ -153,12 +160,11 @@ ul:nth-child(2){
   margin-left: var(--layoutmargin3);
 }
 .card{
-  background-color: var(--color4);
   height: 100%;
   width: 25%;
 }
 .card-text{
-  width: 90%;
+  width: 100%;
   padding-left: 8%;
 }
 #services h3{
@@ -261,19 +267,21 @@ ul:nth-child(2){
   width: 0.3%
 }
 #projects{
-  height: 200vh;
+  height: 160vh;
   width: 100%;
   text-align: center;
+  margin-bottom: 8.4rem;
 }
 .content{
-  height: 71%;
+  height: 90%;
   width: 73%;
   justify-self: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly;  
 }
 .content img{
   height: 455px;
   width: 455px;
+  position: relative;
 }
 .photo1-2{
   height: 50%;
@@ -288,4 +296,56 @@ ul:nth-child(2){
   display: flex;
   justify-self: center;
   justify-content: space-between;
+}
+#clients{
+  height: 45vh;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color4);
+}
+#clients h2{
+  text-transform: uppercase;
+  color: var(--color3);
+  font-family: 'font4';
+  padding-top: 3%;
+  margin-bottom: var(--layoutmargin2);
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+.customunderline3{
+  width: 9%;
+  height: 0.5rem;
+  position: sticky;
+  justify-self: center;
+  left: 40%;
+  background-color: var(--color2);
+}
+.clients-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+#contact{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.contact-content{
+  height: 100%;
+  width: 100%;
+}
+iframe{
+  width: 70%;
+  height: 50%;
+}
+.contact-text-left{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: aqua;
 }
