@@ -6,6 +6,7 @@
     --color5: #3D5975;
     --color6: #464646;
     --color7: #EDCD1F;
+    --color8: #797979;
     --layoutmargin1: 3rem;
     --layoutmargin2: 1rem;
     --layoutmargin3: 4.2rem;
@@ -33,9 +34,14 @@
   src: url(Assets/Fonts/WixMadeforTextVF_W_Wght.8022447a.woff2);
 }
 html, body{
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.outer-wrapper{
+  height: 800vh;
 }
 a{
     text-decoration: none;
@@ -340,12 +346,33 @@ iframe{
   width: 70%;
   height: 50%;
 }
-.contact-text-left{
-  width: 50%;
-  height: 100vh;
+footer{
+  height: 10vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: left;
-  background-color: aqua;
+  margin-top: 90px;
+}
+.footer-content{
+  width: 70%;
+  height: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.underlined{
+  text-decoration: underline;
+}
+.footer-right{
+  display: flex;
+  gap: 0.5rem;
+}
+.footer-left{
+  color: var(--color8);
+}
+#foot{
+  font-size: 1.5rem;
+  color: black;
 }
