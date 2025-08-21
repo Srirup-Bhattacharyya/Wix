@@ -318,16 +318,17 @@ ul:nth-child(2){
 }
 .stats .statscontainer{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-family: 'font4';
   align-items: center;
   width: 80%;
-  height: 100%;
+  height: fit-content;
+  padding: 2rem 0;
 }
 .custom-line{
-  height: 35%;
+  height: 5rem;
   background-color: white;
-  width: 0.3%
+  width: 5px;
 }
 #projects{
   height: 160vh;
