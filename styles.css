@@ -66,6 +66,9 @@ nav{
     color: black;
     padding: 0 1rem 0 1rem;
 }
+.hamburger{
+  display: none;
+}
 .Logo-up{
   font-weight: 720;
   font-family: 'font4';
@@ -133,6 +136,59 @@ ul:nth-child(2){
   font-size: 3rem;
   top: 35%;
   left: 48%;
+}
+.herophone{
+  display: none;
+  background-image: url(./Assets/Images/a9aecfcd0c474899a57da07176a929c4.avif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.overlay h1{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: 'Font1';
+  width: 100%;
+}
+.overlay p{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Font3';
+  width: 80%;
+}
+.overlay i{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 45, 59, 0.5);
+  display: none;
 }
 #services{
   text-align: center;
@@ -238,7 +294,7 @@ ul:nth-child(2){
   line-height: 2rem;
 }
 .stats{
-  height: 226.406px;
+  height: fit-content;
   width: 100%;
   display: flex;
   align-items: center;
@@ -506,4 +562,158 @@ footer{
 #foot{
   font-size: 1.5rem;
   color: black;
+}
+/*Responsive CSS*/
+@media screen and (min-width: 0) and (max-width: 412px) {
+  nav ul:nth-child(2){
+    display: none;
+  }
+  .nav-left{
+    height: 100px;
+    width: 412px;
+  }
+  .hamburger{
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: auto;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .hero{
+    display: none;
+  }
+  .herophone{
+    display: block;
+  }
+  .overlay{
+    display: block;
+  }
+  .service-cards{
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    gap: 26rem;
+    height: 6%;
+  }
+  .card-text{
+    background-color: var(--color4);
+    padding-bottom: 1.5rem;
+  }
+  .card{
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .customunderline{
+    left: 6%;
+    width: 23%;
+    height: 0.5rem;
+    justify-self: left;
+  }
+  #services{
+    text-align:left;
+    height: 270.51vh;
+    /* padding-bottom: 80rem; */
+  }
+  #services h2{
+    font-size: 2.5rem;
+    margin-left: 6%;
+  }
+  #about{
+    flex-direction: column;
+    transform: translateY(6%);
+    background-color: var(--color4);
+    flex-direction: column-reverse;
+  }
+  .about-left{
+    background-color: white;
+    width: 100%;
+    padding: 0 0 0 5%;
+  }
+  .about-right{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./Assets/Images/c19c76_427a7bbf62474f74968cb087499c7a3e.avif);
+    object-fit: fill;
+    flex-shrink: 0;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #about p{
+    font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.5rem;
+  }
+  .customunderline2{
+    width: 20%;
+    height: 0.7rem;
+    justify-self: left;
+    left: 6%;
+  }
+  .stats{
+    height: auto;
+  }
+  .statscontainer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 50%;
+    padding: 3rem 0;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    text-align: center;
+  }
+  .card1 h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2c3e50;
+  }
+  .card1 p {
+    margin: 0;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+  #projects{
+    text-align: left;
+  }
+  #projects h2{
+    font-size: 2.5rem;
+    margin-left: 4.5%;
+  }
+  .customunderline{
+    left: 5%;
+  }
+  .content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    gap: 11rem;
+    transform: translateY(6%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo1-2, .photo2-3{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+  .photo1-2 img, .photo2-3 img{
+    width: 100%;
+    height: auto;
+  }
+  #clients{
+    height: 100vh;
+  }
 }
